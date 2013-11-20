@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="PVViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S1g-Kf-ZvC"/>
+                        <viewControllerLayoutGuide type="bottom" id="oxj-rz-bkY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CB00001" translatesAutoresizingMaskIntoConstraints="NO" id="YQ4-ZP-Wic" userLabel="Image View - CB00001">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="it is decidedly so" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="203" translatesAutoresizingMaskIntoConstraints="NO" id="Pms-Hw-WNy">
+                                <rect key="frame" x="64" y="204" width="203" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="139" id="iz5-7N-tvO"/>
+                                    <constraint firstAttribute="width" constant="203" id="n63-Vj-vRz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YQ4-ZP-Wic" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="8h3-8N-tXB"/>
+                            <constraint firstItem="oxj-rz-bkY" firstAttribute="top" secondItem="YQ4-ZP-Wic" secondAttribute="bottom" id="JQR-8i-asn"/>
+                            <constraint firstItem="Pms-Hw-WNy" firstAttribute="centerY" secondItem="YQ4-ZP-Wic" secondAttribute="centerY" constant="-10.5" id="ReQ-OD-4Q2"/>
+                            <constraint firstItem="YQ4-ZP-Wic" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="SRR-kY-y2B"/>
+                            <constraint firstItem="Pms-Hw-WNy" firstAttribute="centerX" secondItem="YQ4-ZP-Wic" secondAttribute="centerX" constant="5.5" id="XiC-3w-uIQ"/>
+                            <constraint firstAttribute="trailing" secondItem="YQ4-ZP-Wic" secondAttribute="trailing" id="fIq-6F-zMW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="YQ4-ZP-Wic" id="dgS-Ic-Anl"/>
+                        <outlet property="predictionLabel" destination="Pms-Hw-WNy" id="9dW-Ft-a7Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CB00001" width="320" height="568"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
